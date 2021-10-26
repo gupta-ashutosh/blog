@@ -28,7 +28,7 @@ SECRET_KEY = '%w05ge9#y_o2z#au(6afve)chis0nm#c2c6a_i)9h2x)i((4gz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['159.65.156.185']
+ALLOWED_HOSTS = ['159.65.156.185', 'localhost']
 
 
 # Application definition
@@ -78,9 +78,9 @@ TEMPLATES = [
 
 MEDIA_URL = '/media/' 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
-STATIC_ROOT = '' 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
 STATIC_URL = '/static/' 
-STATICFILES_DIRS = ( os.path.join(BASE_DIR,'static'), ) 
+#STATICFILES_DIRS = ( os.path.join(BASE_DIR,'static'), ) 
 
 WSGI_APPLICATION = 'ashutosh_blog.wsgi.application'
 
